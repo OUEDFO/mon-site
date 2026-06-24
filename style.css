@@ -1,40 +1,209 @@
-body{
+/* ==========================
+STYLE GENERAL
+========================== */
+
+*{
     margin:0;
     padding:0;
-    font-family: Arial, sans-serif;
-    line-height:1.6;
-}
-
-.container{
+    box-sizing:border-box;
+    }
+    
+    html{
+    scroll-behavior:smooth;
+    }
+    
+    body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.7;
+    }
+    
+    /* ==========================
+    CONTENEUR
+    ========================== */
+    
+    .container{
     width:90%;
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-h1{
+    }
+    
+    /* ==========================
+    EN-TETE
+    ========================== */
+    
+    header{
+    background:linear-gradient(135deg,#16325c,#234a84);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    }
+    
+    header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+    }
+    
+    .titre{
+    font-size:1.2rem;
+    opacity:0.95;
+    }
+    
+    /* ==========================
+    MENU
+    ========================== */
+    
+    nav{
+    margin-top:25px;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    transition:0.3s;
+    }
+    
+    nav a:hover
+    
+    /* ==========================
+    SECTIONS
+    ========================== */
+    
+    .section{
+    padding:50px 0;
+    }
+    
+    .section h2{
+    color:#16325c;
+    margin-bottom:25px;
+    border-left:6px solid #16325c;
+    padding-left:15px;
     font-size:2rem;
-}
-
-h2{
-    font-size:1.5rem;
-}
-
-@media (max-width:768px){
-
-    h1{
+    }
+    
+    /* ==========================
+    BLOCS
+    ========================== */
+    
+    .bloc{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+    }
+    
+    .bloc:hover{
+    transform:translateY(-3px);
+    }
+    
+    .bloc h3{
+    color:#234a84;
+    margin-bottom:10px;
+    }
+    
+    /* ==========================
+    LISTES
+    ========================== */
+    
+    ul{
+    list-style:none;
+    }
+    
+    ul li{
+    background:white;
+    margin-bottom:10px;
+    padding:12px 18px;
+    border-left:5px solid #16325c;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    
+    /* ==========================
+    LIENS
+    ========================== */
+    
+    a{
+    color:#0056b3;
+    }
+    
+    a:hover
+    
+    /* ==========================
+    CONTACT
+    ========================== */
+    
+    #contact p{
+    margin-bottom:12px;
+    }
+    
+    /* ==========================
+    PIED DE PAGE
+    ========================== */
+    
+    footer{
+    background:#16325c;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    }
+    
+    /* ==========================
+    ANIMATION APPARITION
+    ========================== */
+    
+    .section{
+    animation:fadein 1s ease;
+    }
+    
+    @keyframes fadein{
+    from{
+    opacity:0;
+    transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+    
+    }
+    
+    /* ==========================
+    VERSION MOBILE
+    ========================== */
+    
+    @media(max-width:768px){
+    
+    header h1{
+        font-size:1.8rem;
+    }
+    
+    .titre{
+        font-size:1rem;
+    }
+    
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    
+    nav a{
+        margin:0;
+    }
+    
+    .section h2{
         font-size:1.5rem;
     }
-
-    h2{
-        font-size:1.2rem;
-    }
-
+    
     body{
         font-size:16px;
     }
-}
+    
+    }
+    
