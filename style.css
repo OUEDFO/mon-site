@@ -215,3 +215,23 @@ STYLE GENERAL
         margin-bottom:20px;
         box-shadow:0 4px 12px rgba(0,0,0,0.25);
     }
+    .sous-titre{
+        margin-top:10px;
+        font-size:1rem;
+        color:#e8e8e8;
+    }
+    .btn-whatsapp{
+        display:inline-block;
+        background:#25D366;
+        color:white;
+        padding:12px 20px;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:bold;
+        margin-top:15px;
+    }
+    
+    .btn-whatsapp:hover{
+        background:#1ea952;
+        color:white;
+    }
